@@ -1,0 +1,29 @@
+{
+  "name": "JPush-extension-iOS",
+  "version": "1.1.1",
+  "summary": "Unofficially supported JPush extension iOS SDK Pod.",
+  "description": "Unofficially supported JPush extension iOS SDK Pod.\\n https://docs.jiguang.cn",
+  "homepage": "https://www.jiguang.cn/",
+  "license": {
+    "type": "Copyright",
+    "text": "Copyright jpush.cn"
+  },
+  "authors": {
+    "JPush": "support@jpush.cn"
+  },
+  "source": {
+    "http": "https://www.jiguang.cn/downloads/sdk/ios",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "jpush-ios-*-release/Lib/JPushNotificationExtensionService.h",
+  "vendored_libraries": "jpush-ios-*-release/Lib/jpush-extension-ios-*.a",
+  "frameworks": "Foundation",
+  "weak_frameworks": "UserNotifications",
+  "libraries": [
+    "z",
+    "resolv"
+  ]
+}

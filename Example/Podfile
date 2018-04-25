@@ -1,0 +1,9 @@
+use_frameworks!
+
+target 'jpush-ios-example' do
+    platform :ios, '7.0'
+end
+target 'jpush-ios-extension' do
+    platform :ios, '10.0'
+    pod 'JPush-extension-iOS', :podspec => '../'
+end

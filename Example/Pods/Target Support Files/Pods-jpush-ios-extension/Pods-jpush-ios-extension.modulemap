@@ -1,0 +1,6 @@
+framework module Pods_jpush_ios_extension {
+  umbrella header "Pods-jpush-ios-extension-umbrella.h"
+
+  export *
+  module * { export * }
+}
