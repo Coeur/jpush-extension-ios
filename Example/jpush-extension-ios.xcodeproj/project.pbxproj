@@ -377,6 +377,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "${PODS_ROOT}/Headers/Public/JPush-extension-iOS/JPushNotificationExtensionService.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -403,6 +404,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.jpush-ios-example.jpush-extension-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "${PODS_ROOT}/Headers/Public/JPush-extension-iOS/JPushNotificationExtensionService.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
