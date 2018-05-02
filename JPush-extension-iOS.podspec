@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   
   s.source           = { :http => 'https://www.jiguang.cn/downloads/sdk/ios', :type => :zip }
   #s.source           = { :http => 'https://sdkfiledl.jiguang.cn/build/jpush-ios-3.0.9-release.zip' }
+  s.prepare_command = 'find . -type f -regex ^./jpush-ios-.*-release/Lib/jpush-extension-ios-.*.a | sed -e \'p;s@jpush-extension@libjpush-extension@g\' | xargs -n2 mv'
   
   # https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension
   s.ios.deployment_target = '10.0'
@@ -21,7 +22,7 @@ Pod::Spec.new do |s|
   #s.user_target_xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => '$(PODS_ROOT)/Headers/Public/JPush-extension-iOS/JPushNotificationExtensionService.h' }
   
   s.source_files = 'jpush-ios-*-release/Lib/JPushNotificationExtensionService.h'
-  s.vendored_libraries = 'jpush-ios-*-release/Lib/jpush-extension-ios-*.a'
+  s.vendored_libraries = 'jpush-ios-*-release/Lib/libjpush-extension-ios-*.a'
   s.frameworks = 'Foundation'
   s.weak_frameworks = 'UserNotifications'
   s.libraries = 'z', 'resolv'

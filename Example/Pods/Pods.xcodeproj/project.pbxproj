@@ -20,7 +20,6 @@
 		1B851D1277309F946D7F43BA2CB9B04C /* Pods-jpush-ios-extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-jpush-ios-extension-resources.sh"; sourceTree = "<group>"; };
 		22108774643AF00A13B5193881BA831C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		390A901BE2FD435B6428DF80AB5AE100 /* Pods-jpush-ios-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jpush-ios-example.release.xcconfig"; sourceTree = "<group>"; };
-		4ED044779F277F2F728E134B529C74B6 /* jpush-extension-ios-1.1.1.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "jpush-extension-ios-1.1.1.a"; path = "jpush-ios-3.0.9-release/Lib/jpush-extension-ios-1.1.1.a"; sourceTree = "<group>"; };
 		5DF6B34EEBB1739B3D758762F206BAB1 /* Pods-jpush-ios-extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-jpush-ios-extension-acknowledgements.plist"; sourceTree = "<group>"; };
 		60D47AD8DF2090353980A6B91502539D /* Pods_jpush_ios_extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_jpush_ios_extension.framework; path = "Pods-jpush-ios-extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -33,6 +32,7 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9C9D4C7A64B48AC82989BABA6CD4858D /* Pods-jpush-ios-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-jpush-ios-example.debug.xcconfig"; sourceTree = "<group>"; };
 		9F6E68EB30EDDA058232EC6D6884A228 /* Pods-jpush-ios-extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-jpush-ios-extension-umbrella.h"; sourceTree = "<group>"; };
+		A3E8BC2CA17A9A931E31CD3DAAC25DAA /* libjpush-extension-ios-1.1.1.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libjpush-extension-ios-1.1.1.a"; path = "jpush-ios-3.0.9-release/Lib/libjpush-extension-ios-1.1.1.a"; sourceTree = "<group>"; };
 		A522AD238333F9721798E5AF5F7EAE2F /* Pods-jpush-ios-example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-jpush-ios-example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AA8AAF45CC73D5923FAB89EEF109ECAC /* Pods_jpush_ios_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_jpush_ios_example.framework; path = "Pods-jpush-ios-example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1EE072ACF4CC44E5407C9D0A06134D /* Pods-jpush-ios-example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-jpush-ios-example.modulemap"; sourceTree = "<group>"; };
@@ -63,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181FC126C32AF651A9F571FA5E98BF67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3E8BC2CA17A9A931E31CD3DAAC25DAA /* libjpush-extension-ios-1.1.1.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -87,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				67E605C1B882929E7212C9DA9A414908 /* JPushNotificationExtensionService.h */,
-				AFF4837D54E8D68B993CB09D801DB1B9 /* Frameworks */,
+				181FC126C32AF651A9F571FA5E98BF67 /* Frameworks */,
 			);
 			name = "JPush-extension-iOS";
 			path = "JPush-extension-iOS";
@@ -117,14 +125,6 @@
 			);
 			name = "Pods-jpush-ios-extension";
 			path = "Target Support Files/Pods-jpush-ios-extension";
-			sourceTree = "<group>";
-		};
-		AFF4837D54E8D68B993CB09D801DB1B9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4ED044779F277F2F728E134B529C74B6 /* jpush-extension-ios-1.1.1.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B6EB21FBEB3864B6794D5CE070D15B9D /* Pods */ = {

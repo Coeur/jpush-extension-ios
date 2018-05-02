@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :podspec: "../"
 
 SPEC CHECKSUMS:
-  JPush-extension-iOS: 159c73caab0ee9d5075e90890223894f0efe140a
+  JPush-extension-iOS: 418f63cf082d59f255a849973105bbfa74af4ffa
 
 PODFILE CHECKSUM: 089ffb85158c524b27dbdf959555a7a8f5733d6d
 

@@ -15,11 +15,12 @@
     "http": "https://www.jiguang.cn/downloads/sdk/ios",
     "type": "zip"
   },
+  "prepare_command": "find . -type f -regex ^./jpush-ios-.*-release/Lib/jpush-extension-ios-.*.a | sed -e 'p;s@jpush-extension@libjpush-extension@g' | xargs -n2 mv",
   "platforms": {
     "ios": "10.0"
   },
   "source_files": "jpush-ios-*-release/Lib/JPushNotificationExtensionService.h",
-  "vendored_libraries": "jpush-ios-*-release/Lib/jpush-extension-ios-*.a",
+  "vendored_libraries": "jpush-ios-*-release/Lib/libjpush-extension-ios-*.a",
   "frameworks": "Foundation",
   "weak_frameworks": "UserNotifications",
   "libraries": [
